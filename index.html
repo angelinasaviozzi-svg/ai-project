@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Unpacked</title>
+<style>
+:root{--green:#234632;--cream:#f8f7f0;--sage:#e5ecdf}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:#263a2c;line-height:1.6}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+nav a{color:var(--green);text-decoration:none;margin-right:12px;font-size:14px}
+.hero{background:var(--green);color:white;padding:70px 7%}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;max-width:700px}
+.hero h1 span{color:#c8dfb7}
+.hero p{max-width:550px}
+.btn{display:inline-block;background:#e0ead5;color:var(--green);border:0;border-radius:8px;padding:12px 20px;font-weight:bold;cursor:pointer;text-decoration:none}
+section{max-width:1000px;margin:auto;padding:50px 6%}
+h2{font-size:30px;line-height:1.25}
+h3{margin-bottom:8px}
+.tag{color:#527b59;font-size:13px;font-weight:bold;letter-spacing:1px}
+.box{background:var(--sage);padding:22px;border-radius:12px;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:22px}
+.card{background:white;border:1px solid #d5dfd0;border-radius:12px;padding:20px}
+button.card{width:100%;text-align:left;color:inherit;font:inherit;cursor:pointer}
+button.card:hover,button.card:focus-visible{background:#eff5eb;border-color:#527b59}
+.emoji{font-size:28px}
+.detail{display:none}
+.card.open .detail{display:block}
+.good{background:#e0eedf}
+.risk{background:#f5e7de}
+.quiz{background:var(--sage);border-radius:14px;padding:24px}
+.answer{display:block;width:100%;background:white;border:1px solid #b9cdb6;border-radius:8px;padding:13px;margin:10px 0;text-align:left;cursor:pointer;font-size:15px}
+.answer:disabled{cursor:default}
+.correct{background:#bfe4c1}
+.wrong{background:#f4c9c3}
+.sources a{display:block;margin:12px 0;color:#315e42;overflow-wrap:anywhere}
+footer{text-align:center;background:var(--green);color:white;padding:25px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.hero{padding:50px 6%}}
+</style>
+</head>
+<body>
+
+<header>
+<strong>✳ AI UNPACKED</strong>
+<nav>
+<a href="#basics">Basics</a>
+<a href="#everyday">Everyday AI</a>
+<a href="#risks">Risks</a>
+<a href="#future">Future</a>
+<a href="#quiz">Quiz</a>
+</nav>
+</header>
+
+<main>
+<div class="hero">
+<p>MY BEGINNER'S GUIDE TO ARTIFICIAL INTELLIGENCE</p>
+<h1>AI is part of our lives.<br><span>Here is how it works.</span></h1>
+<p>We hear about AI everywhere. But what does it actually mean? I made this website to explain it in a simple way.</p>
+<a class="btn" href="#basics">Start exploring</a>
+</div>
+
+<section id="basics">
+<p class="tag">01 / THE BASICS</p>
+<h2>What actually is AI?</h2>
+<p>Artificial intelligence is technology that can recognize patterns, make predictions and create things like text or images.</p>
+<p>AI learns from information and examples. It does not think exactly like a person and it can still make mistakes.</p>
+<div class="box">
+<h3>Think of it like this 🧩</h3>
+<p>Imagine showing someone thousands of pictures of cats and dogs. Eventually they learn how to tell them apart. AI can learn patterns from examples in a similar way.</p>
+</div>
+<div class="grid">
+<div class="card"><h3>1. Data</h3><p>AI uses information and examples.</p></div>
+<div class="card"><h3>2. Patterns</h3><p>It finds connections in that information.</p></div>
+<div class="card"><h3>3. Output</h3><p>It makes a prediction or creates an answer.</p></div>
+<div class="card"><h3>4. Check</h3><p>People should check important results.</p></div>
+</div>
+</section>
+
+<section id="everyday">
+<p class="tag">02 / EVERYDAY LIFE</p>
+<h2>You probably use AI every day</h2>
+<p>Click each card to learn more.</p>
+<div class="grid">
+<button class="card" type="button" aria-expanded="false">
+<span class="emoji">📱</span>
+<h3>Your phone</h3>
+<p>Face recognition and autocorrect.</p>
+<p class="detail">AI can help recognize your face or predict the next word you want to type.</p>
+<small>Click to explore +</small>
+</button>
+<button class="card" type="button" aria-expanded="false">
+<span class="emoji">🎧</span>
+<h3>Your music</h3>
+<p>Personalized playlists.</p>
+<p class="detail">Music apps can use listening patterns to recommend songs you might like.</p>
+<small>Click to explore +</small>
+</button>
+<button class="card" type="button" aria-expanded="false">
+<span class="emoji">📚</span>
+<h3>Your studies</h3>
+<p>Explaining difficult topics.</p>
+<p class="detail">AI can help summarize notes and create practice questions. But you should check its answers.</p>
+<small>Click to explore +</small>
+</button>
+<button class="card" type="button" aria-expanded="false">
+<span class="emoji">🌍</span>
+<h3>Your travels</h3>
+<p>Translation and navigation.</p>
+<p class="detail">AI can help translate languages and predict traffic conditions.</p>
+<small>Click to explore +</small>
+</button>
+</div>
+</section>
+
+<section id="risks">
+<p class="tag">03 / GOOD AND BAD</p>
+<h2>AI is helpful but not perfect</h2>
+<div class="grid">
+<div class="card good">
+<h3>✓ Benefits</h3>
+<p><b>Education:</b> Makes learning easier.</p>
+<p><b>Healthcare:</b> Helps doctors analyze information.</p>
+<p><b>Accessibility:</b> Helps people communicate.</p>
+<p><b>Creativity:</b> Helps generate new ideas.</p>
+</div>
+<div class="card risk">
+<h3>! Risks</h3>
+<p><b>Mistakes:</b> AI can give wrong answers.</p>
+<p><b>Bias:</b> Some results can be unfair.</p>
+<p><b>Privacy:</b> Personal data may be exposed.</p>
+<p><b>Deepfakes:</b> Fake videos can fool people.</p>
+<p><b>Fraud:</b> Scammers can impersonate others.</p>
+<p><b>Dependence:</b> People may stop checking things themselves.</p>
+</div>
+</div>
+<div class="box">
+<h3>Real example: Deepfake scams</h3>
+<p>Scammers have used AI-generated video calls to pretend to be real coworkers. This shows why we should verify unusual requests before sending money or private information.</p>
+</div>
+</section>
+
+<section id="future">
+<p class="tag">04 / THE FUTURE</p>
+<h2>What could happen next?</h2>
+<div class="grid">
+<div class="card"><h3>🚀 Smarter tools</h3><p>AI could help people study, work and communicate more easily.</p></div>
+<div class="card"><h3>⚡ Electricity demand</h3><p>AI data centers use electricity. Rapid growth could put pressure on power grids and increase the risk of outages in some places if infrastructure does not keep up.</p></div>
+<div class="card"><h3>🔒 Security</h3><p>AI can help detect threats but can also be misused by hackers and scammers.</p></div>
+<div class="card"><h3>👥 Human supervision</h3><p>AI services can have outages or fail. People still need to make important decisions and have backup plans.</p></div>
+</div>
+<div class="box">
+<h3>My opinion 💭</h3>
+<p>I think AI is useful when it helps us rather than replaces our thinking. We should enjoy its benefits while understanding its limits.</p>
+</div>
+</section>
+
+<section id="quiz">
+<p class="tag">05 / TEST YOURSELF</p>
+<h2>Quick AI quiz!</h2>
+<p>See what you learned in three questions.</p>
+<div class="quiz">
+<p id="progress">Question 1 of 3</p>
+<h3 id="question"></h3>
+<div id="answers"></div>
+<p id="feedback" aria-live="polite"></p>
+<button class="btn" id="next" type="button" hidden>Next question</button>
+</div>
+</section>
+
+<section id="process">
+<p class="tag">06 / BEHIND THE WEBSITE</p>
+<h2>How this website was made</h2>
+<p>I wanted to make a website about artificial intelligence that anyone could understand. My main idea was to explain AI without using too many complicated words. I started with a simple definition and then added examples from everyday life so people could relate to the topic.</p>
+<p>I chose dark forest green and cream because I wanted the website to look simple and calm. I organized the information into short sections so visitors would not feel overwhelmed. I also included clickable cards and a short quiz to make learning more interesting.</p>
+<p>HTML was used for the content and structure. CSS was used for the colors, spacing and mobile layout. JavaScript was used to make the cards and quiz interactive. I used ChatGPT to help draft explanations and create code. I included sources so visitors could learn more and check the information.</p>
+<p>Before submitting, I need to check that the website works on my computer and phone, that the buttons respond correctly and that the source links open. I also need to review the writing to make sure it reflects my understanding.</p>
+</section>
+
+<section id="sources" class="sources">
+<p class="tag">07 / SOURCES</p>
+<h2>Where to learn more</h2>
+<p>These websites explain AI and its impact in more detail.</p>
+<a href="https://oecd.ai/" target="_blank" rel="noopener noreferrer">OECD AI Policy Observatory</a>
+<a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer">NIST AI Risk Management Framework</a>
+<a href="https://www.iea.org/reports/energy-and-ai" target="_blank" rel="noopener noreferrer">International Energy Agency: Energy and AI</a>
+<a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3250851/everyone-looked-real-multinational-firms-hong-kong-office-loses-hk200-million-after-scammers-stage" target="_blank" rel="noopener noreferrer">Deepfake video call fraud report</a>
+</section>
+</main>
+
+<footer>
+<strong>AI UNPACKED</strong>
+<p>A simple guide to understanding artificial intelligence</p>
+</footer>
+
+<script>
+document.querySelectorAll("button.card").forEach(function(card){
+card.addEventListener("click",function(){
+const open=card.classList.toggle("open");
+card.setAttribute("aria-expanded",String(open));
+card.querySelector("small").textContent=open?"Click to close -":"Click to explore +";
+});
+});
+
+const questions=[
+{q:"Can AI give answers that sound correct but are wrong?",a:["Yes","No"],c:0,e:"AI can make mistakes even when it sounds confident."},
+{q:"What is one risk of deepfake videos?",a:["They can impersonate real people","They always improve security","They cannot be shared"],c:0,e:"Deepfakes can be used to trick people."},
+{q:"What is a good way to use AI?",a:["Trust every answer","Check important information","Share private passwords"],c:1,e:"Checking important information helps you use AI safely."}
+];
+let current=0,score=0,answered=false;
+const questionEl=document.getElementById("question");
+const answersEl=document.getElementById("answers");
+const feedbackEl=document.getElementById("feedback");
+const progressEl=document.getElementById("progress");
+const nextBtn=document.getElementById("next");
+
+function showQuestion(){
+answered=false;
+const item=questions[current];
+questionEl.textContent=item.q;
+progressEl.textContent="Question "+(current+1)+" of "+questions.length;
+answersEl.innerHTML="";
+feedbackEl.textContent="";
+nextBtn.hidden=true;
+item.a.forEach(function(option,index){
+const button=document.createElement("button");
+button.className="answer";
+button.type="button";
+button.textContent=option;
+button.addEventListener("click",function(){
+if(answered)return;
+answered=true;
+if(index===item.c)score++;
+answersEl.querySelectorAll("button").forEach(function(b,i){
+b.disabled=true;
+if(i===item.c)b.classList.add("correct");
+else if(i===index)b.classList.add("wrong");
+});
+feedbackEl.textContent=(index===item.c?"Correct! ":"Not quite. ")+item.e;
+nextBtn.textContent=current===questions.length-1?"See my score":"Next question";
+nextBtn.hidden=false;
+});
+answersEl.appendChild(button);
+});
+}
+nextBtn.addEventListener("click",function(){
+if(current===questions.length){
+current=0;score=0;showQuestion();return;
+}
+current++;
+if(current===questions.length){
+questionEl.textContent="You got "+score+" out of "+questions.length+"! 🎉";
+progressEl.textContent="Finished";
+answersEl.innerHTML="";
+feedbackEl.textContent="Great job exploring AI. Remember to check what you see online.";
+nextBtn.textContent="Try again";
+nextBtn.hidden=false;
+}else{
+showQuestion();
+}
+});
+showQuestion();
+</script>
+</body>
+</html>
